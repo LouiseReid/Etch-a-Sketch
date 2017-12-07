@@ -49,6 +49,12 @@ var app = function(){
     }
   })
 
+  var shake = document.getElementById('shake');
+  shake.addEventListener('click', function(){
+    context.clearRect(0, 0, canvas.width, canvas.height)
+    context.beginPath()
+  })
+
   document.onkeydown = checkKey;
 
   function checkKey(e) {
